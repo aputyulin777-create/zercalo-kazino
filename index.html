@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zerkalo Casino — всегда рабочие зеркала</title>
+    <!-- Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts (Inter + Montserrat) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #0c0c14;
+            color: #fff;
+            line-height: 1.5;
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Градиентный фон для секций */
+        .gradient-bg {
+            background: linear-gradient(145deg, #13131f, #0a0a12);
+        }
+
+        /* Кнопка Telegram (основная) */
+        .btn-telegram {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: #27A6E5;
+            color: white;
+            font-weight: 700;
+            font-size: 22px;
+            padding: 18px 45px;
+            border-radius: 60px;
+            text-decoration: none;
+            border-bottom: 5px solid #1a7da8;
+            transition: 0.15s;
+            box-shadow: 0 10px 25px -5px #27A6E580;
+        }
+
+        .btn-telegram i {
+            font-size: 28px;
+        }
+
+        .btn-telegram:hover {
+            background: #3cb3f0;
+            border-bottom-width: 3px;
+            transform: translateY(2px);
+            box-shadow: 0 15px 30px -5px #27A6E5;
+        }
+
+        /* Кнопка второстепенная */
+        .btn-outline {
+            display: inline-block;
+            background: transparent;
+            color: #ffaa33;
+            font-weight: 600;
+            font-size: 18px;
+            padding: 14px 35px;
+            border-radius: 60px;
+            text-decoration: none;
+            border: 2px solid #ffaa33;
+            transition: 0.2s;
+        }
+
+        .btn-outline:hover {
+            background: #ffaa33;
+            color: #0c0c14;
+        }
+
+        /* Шапка */
+        .header {
+            padding: 20px 0;
+            border-bottom: 1px solid #2a2a3a;
+            background: #0c0c14;
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px;
+            font-weight: 900;
+            background: linear-gradient(135deg, #ffd966, #ffaa33);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .age-badge {
+            background: #dc3545;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        /* Hero */
+        .hero {
+            padding: 80px 0 60px;
+            text-align: center;
+            background: radial-gradient(circle at 20% 30%, #252538, #0b0b12);
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            font-weight: 800;
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            background: linear-gradient(135deg, #ffd966, #ffaa33);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #b0b0c0;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+.hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 36px;
+            font-weight: 800;
+            color: #ffaa33;
+        }
+
+        .stat-label {
+            color: #aaa;
+            font-size: 16px;
+        }
+
+        /* Карусель / сетка казино */
+        .casinos {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            font-size: 40px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .section-title span {
+            color: #ffaa33;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: #aaa;
+            font-size: 18px;
+            max-width: 700px;
+            margin: 0 auto 50px;
+        }
+
+        .casino-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .casino-card {
+            background: #1a1a28;
+            border-radius: 30px;
+            padding: 30px 20px;
+            border: 1px solid #2a2a3a;
+            transition: 0.2s;
+            text-align: center;
+            backdrop-filter: blur(5px);
+        }
+
+        .casino-card:hover {
+            border-color: #ffaa33;
+            transform: translateY(-10px);
+            box-shadow: 0 20px 30px -10px #00000080;
+        }
+
+        .casino-icon {
+            font-size: 48px;
+            background: #252538;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            color: #ffaa33;
+            border: 3px solid #ffaa33;
+        }
+
+        .casino-name {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .bonus-badge {
+            background: #ffaa33;
+            color: #0c0c14;
+            font-weight: 700;
+            padding: 8px 15px;
+            border-radius: 50px;
+            display: inline-block;
+            margin: 15px 0;
+        }
+
+        .btn-card {
+            display: inline-block;
+            background: #ffaa33;
+            color: #0c0c14;
+            font-weight: 700;
+            padding: 12px 30px;
+            border-radius: 40px;
+            text-decoration: none;
+            border-bottom: 4px solid #b8731e;
+            transition: 0.1s;
+        }
+
+        .btn-card:hover {
+            background: #ffb84d;
+            border-bottom-width: 2px;
+            transform: translateY(2px);
+        }
+
+        /* Преимущества подписки */
+        .benefits {
+            padding: 70px 0;
+            background: #11111c;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .benefit-item {
+            background: #1e1e2b;
+            border-radius: 24px;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 4px solid #ffaa33;
+        }
+
+        .benefit-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            color: #ffaa33;
+        }
+
+        .benefit-item h4 {
+            font-size: 22px;
+            margin-bottom: 12px;
+        }
+
+        .benefit-item p {
+            color: #aaa;
+        }
+
+        /* Блок с отзывом */
+        .testimonials {
+            padding: 80px 0;
+        }
+
+        .testimonial-card {
+            background: #1a1a28;
+            border-radius: 30px;
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            border: 1px solid #2a2a3a;
+        }
+.testimonial-card p {
+            font-size: 20px;
+            font-style: italic;
+            color: #ddd;
+            margin-bottom: 20px;
+        }
+
+        .author {
+            font-weight: 700;
+            color: #ffaa33;
+        }
+
+        /* Призыв к Telegram */
+        .tg-banner {
+            background: linear-gradient(145deg, #27A6E5, #1f8bcb);
+            border-radius: 50px;
+            padding: 70px 40px;
+            text-align: center;
+            margin: 40px 0 80px;
+        }
+
+        .tg-banner h2 {
+            font-size: 48px;
+            color: white;
+            margin-bottom: 20px;
+            font-weight: 800;
+        }
+
+        .tg-banner p {
+            font-size: 22px;
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 30px;
+        }
+
+        .btn-tg-big {
+            background: white;
+            color: #1f8bcb;
+            font-size: 28px;
+            padding: 20px 60px;
+            border-radius: 80px;
+            font-weight: 800;
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            text-decoration: none;
+            border-bottom: 5px solid #ccc;
+            transition: 0.1s;
+        }
+
+        .btn-tg-big i {
+            font-size: 36px;
+        }
+
+        .btn-tg-big:hover {
+            background: #f0f0f0;
+            border-bottom-width: 3px;
+            transform: translateY(2px);
+        }
+
+        /* Footer */
+        .footer {
+            background: #0c0c14;
+            padding: 50px 0 30px;
+            border-top: 1px solid #2a2a3a;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .footer-links a {
+            color: #aaa;
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: #ffaa33;
+        }
+
+        .eighteen-plus {
+            background: #dc3545;
+            color: white;
+            padding: 8px 24px;
+            border-radius: 50px;
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: 700;
+        }
+
+        .copyright {
+            color: #6a6a80;
+            margin-top: 30px;
+            font-size: 14px;
+        }
+
+        /* Медиа */
+        @media (max-width: 700px) {
+            .hero h1 { font-size: 42px; }
+            .btn-telegram { font-size: 18px; padding: 15px 30px; }
+            .tg-banner h2 { font-size: 32px; }
+            .btn-tg-big { font-size: 22px; padding: 15px 30px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ШАПКА -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">🔞 ZERKALO CASINO</div>
+            <div class="age-badge">18+</div>
+        </div>
+    </header>
+
+    <!-- ГЛАВНЫЙ ЭКРАН -->
+    <section class="hero">
+        <div class="container">
+            <h1>Всегда рабочие <span>зеркала</span><br>и бонусы без вейджера</h1>
+            <p>Подпишись на Telegram-канал и получай актуальные ссылки на топовые казино, эксклюзивные бонусы и фриспины каждый день.</p>
+            
+            <!-- Кнопка на Telegram (основная) -->
+            <a href="https://t.me/zerkalo_kazino_24" class="btn-telegram" target="_blank">
+                <i class="fab fa-telegram-plane"></i> ПОДПИСАТЬСЯ
+            </a>
+
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">15 000+</div>
+                    <div class="stat-label">подписчиков</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">актуальные зеркала</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">казино в канале</div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- ПОПУЛЯРНЫЕ КАЗИНО (с логотипами) -->
+<section class="casinos">
+    <div class="container">
+        <h2 class="section-title">🔥 Топ казино в <span>нашем канале</span></h2>
+        <div class="section-subtitle">Переходи в Telegram и забирай бонусы, которые не найти в открытом доступе</div>
+        <div class="casino-grid">
+            <div class="casino-card">
+                <div class="casino-icon">
+                    <img src="images/vodka-logo.png" alt="Vodka Casino" style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover;">
+                </div>
+                <div class="casino-name">Vodka</div>
+                <div class="bonus-badge">100% до 50 000₽</div>
+                <p style="color: #aaa; margin-bottom: 20px;">Лицензия MGA, быстрые выплаты</p>
+                <a href="https://t.me/zerkalo_kazino_24" class="btn-card" target="_blank">Взять бонус</a>
+            </div>
+            <div class="casino-card">
+                <div class="casino-icon">
+                    <img src="images/vavada-logo.png" alt="Vavada Casino" style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover;">
+                </div>
+                <div class="casino-name">Vavada</div>
+                <div class="bonus-badge">200% + 150 FS</div>
+                <p style="color: #aaa; margin-bottom: 20px;">Без верификации, моментальный вывод</p>
+                <a href="https://t.me/zerkalo_kazino_24" class="btn-card" target="_blank">Взять бонус</a>
+            </div>
+            <div class="casino-card">
+                <div class="casino-icon">
+                    <img src="images/1win-logo.png" alt="1win Casino" style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover;">
+                </div>
+                <div class="casino-name">1win</div>
+                <div class="bonus-badge">100 фриспинов</div>
+                <p style="color: #aaa; margin-bottom: 20px;">3000+ слотов, криптовалюта</p>
+                <a href="https://t.me/zerkalo_kazino_24" class="btn-card" target="_blank">Взять бонус</a>
+            </div>
+            <div class="casino-card">
+                <div class="casino-icon">
+                    <img src="images/duel-logo.png" alt="Duel Casino" style="width: 70px; height: 70px; border-radius: 50%; object-fit: cover;">
+                </div>
+                <div class="casino-name">Duel Casino</div>
+                <div class="bonus-badge">120% + 250 FS</div>
+                <p style="color: #aaa; margin-bottom: 20px;">Live-казино, турниры</p>
+                <a href="https://t.me/zerkalo_kazino_24" class="btn-card" target="_blank">Взять бонус</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- ПРЕИМУЩЕСТВА ПОДПИСКИ -->
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title">🎯 Почему стоит <span>подписаться</span></h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-bolt"></i></div>
+                    <h4>Мгновенные зеркала</h4>
+                    <p>Как только блокируют ссылку — мы выкладываем новую в канале</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-gift"></i></div>
+                    <h4>Закрытые бонусы</h4>
+                    <p>Только для подписчиков: бездепозитные фриспины, повышенные кэшбэки</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h4>Проверенные казино</h4>
+                    <p>Никакой рекламы лохотронов — только лицензионные операторы</p>
+                </div>
+                <div class="benefit-item">
+                    <div class="benefit-icon"><i class="fas fa-clock"></i></div>
+                    <h4>24/7 поддержка</h4>
+                    <p>Админ всегда на связи, поможем с выбором казино</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ОТЗЫВ ПОДПИСЧИКА -->
+    <section class="testimonials">
+        <div class="container">
+<div class="testimonial-card">
+                <p>«Раньше постоянно искал рабочие зеркала через VPN, терял кучу времени. Подписался на этот канал — теперь всегда знаю, где играть. Уже два раза выводил выигрыши без проблем!»</p>
+                <div class="author">— Игорь, подписчик канала</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- БОЛЬШОЙ БАННЕР ПЕРЕХОДА В TELEGRAM -->
+    <div class="container">
+        <div class="tg-banner">
+            <h2>🚀 Переходи в Telegram</h2>
+            <p>и забирай бонус 100% на первый депозит + 50 фриспинов</p>
+            <a href="https://t.me/zerkalo_kazino_24" class="btn-tg-big" target="_blank">
+                <i class="fab fa-telegram-plane"></i> @zerkalo_kazino_24
+            </a>
+        </div>
+    </div>
+
+    <!-- ФУТЕР -->
+    <footer class="footer">
+        <div class="container">
+            <div class="logo" style="margin-bottom: 20px;">🔞 ZERKALO CASINO</div>
+            <div class="footer-links">
+                <a href="#">Политика конфиденциальности</a>
+                <a href="#">Ответственная игра</a>
+                <a href="#">Контакты</a>
+            </div>
+            <div class="eighteen-plus">18+ Только для совершеннолетних</div>
+            <p class="copyright">© 2026 Zerkalo Casino. Все права защищены. Азартные игры могут вызывать зависимость. Играйте ответственно.</p>
+        </div>
+    </footer>
+
+    <!-- Фиксированная маленькая кнопка Telegram для быстрого перехода (опционально) -->
+    <div style="position: fixed; bottom: 30px; right: 30px; z-index: 999;">
+        <a href="https://t.me/zerkalo_kazino_24" target="_blank" style="background: #27A6E5; width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 10px 25px #27A6E5; border: 3px solid white;">
+            <i class="fab fa-telegram-plane" style="font-size: 36px; color: white;"></i>
+        </a>
+    </div>
+</body>
+</html>
